@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="flower.png">
+    <title>Datura</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Datura Ai Image Generator</h1>
+        <p>Write your prompt here to generate images with the power of Ai. For example : "16-bit illustration of a spaceship flying over an alien planet, with asteroids and stars --ar 3:2 --v 4
+            ".
+        </p>
+             <form class="gen-form">
+                <input type="text" id="user-prompt"
+                placeholder="Type your prompt here..."
+                autocomplete="off">
+                <button type="button" id="generate">Generate</button>
+             </form>
+
+
+             <div class="result">
+                <div id="loading">Generating...</div>
+                <div id="image-grid"></div>
+             </div>
+
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
